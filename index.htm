@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roberto Escobar</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+<h2>Registro de Estudiantes</h2>
+<form id="studentForm">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" required><br><br>
+    <label for="lastName">Apellido:</label>
+    <input type="text" id="lastName" required><br><br>
+    <label for="grade">Nota:</label>
+    <input type="number" id="grade" min="0" max="100" required><br><br>
+    <input type="hidden" id="studentId">
+    <button type="submit" id="submitButton">Agregar</button>
+    <button type="button" id="cancelButton" style="display:none;">Cancelar</button>
+</form>
+<hr>
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Nota</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="main.js"></script>
+</body>
+</html>
